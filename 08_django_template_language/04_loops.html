@@ -1,0 +1,6 @@
+
+{% for tag in article.tags.all %}
+    {{ tag.name }}
+{% empty %}
+    No tags
+{% endfor %}

@@ -1,0 +1,10 @@
+
+{% if article.publish_status %}
+    Published
+{% else %}
+    Not Published
+{% endif %}
+
+{% if article.tags.count > 2 %}
+     The article has more than two tags.
+{% endif %}

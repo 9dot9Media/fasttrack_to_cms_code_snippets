@@ -1,0 +1,1 @@
+print( 2 ** 2000 ) # 2 to the power of 2000

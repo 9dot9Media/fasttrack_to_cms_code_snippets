@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    {% block title %}My CMS{% endblock %}
+  </title>
+</head>
+<body>
+<aside id="sidebar">
+  {% block sidebar %}
+    <menu>
+      <li><a href="/articles/">
+        All Articles
+      </a></li>
+      <li><a href="/categories/">
+         Browse Categories
+      </a></li>
+    </menu>
+  {% endblock %}
+</aside>
+<main role="main">
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>

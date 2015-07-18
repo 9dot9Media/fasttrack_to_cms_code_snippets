@@ -1,0 +1,10 @@
+{% extends 'site_base.html' %}
+{% block title %} 
+  {{ article.title }} 
+{% endblock %}
+{% block content %}
+    <h1>{{ article.title }}</h1>
+    <p>Author: {{ article.author }}</p>
+    <p>Category: {{ article.category }}</p>
+    {{ article.content }}
+{% endblock %}
